@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            
+            <h1 class="text-white"> USUARIO </h1>
+            <div id="catSucursal" class="m-4 p-3">
+
+                <div class="row m-3 mx-auto col-7">
+                    
+                    <div class="input-group">          
+                        <input type="search" id="txtBusqUsu" class="form-control" placeholder="Buscar">
+                        <button type="button" class="btn btn-lg btn-warning" onClick="buscarUsu();"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" class="btn btn-lg btn-success" onClick="imprimirTablaUsu();"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    </div>
+
+                </div>
+
+                <table class="table table-striped cajas">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Nombre Usuario</td>
+                            <td>Contraseña</td>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>Telefono</td>
+                            <td>Estatus</td>
+                            <td>Foto</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="tb-catUsuario">
+
+                    </tbody>
+                </table>
+
+            </div>  
+            <div class="container">
+                <div class="row mx-auto">
+                    <div id="formularioUsuario" class="bg-white bg-opacity-25 m-4 p-2 cajas col-6">
+                        <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> AGREGAR NUEVO</h1>
+                        <br>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" readonly class="form-control" id="txtIdUsuario">
+                            <label for="txtIdUsuario">Id</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtNombreUsuario">
+                            <label for="txtNombreUsuario">Nombre de Usuario</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="password" class="form-control" id="txtContraUsuario">
+                            <label for="txtContraUsuario">Contraseña Usuario</label>
+                        </div>
+                        <br>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtNombre">
+                            <label for="txtNombre">Nombre</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtApellidos">
+                            <label for="txtApellidos">Apellidos</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtNumTelefono">
+                            <label for="txtNumTelefono">Telefono</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtEstatusUsuario">
+                            <label for="txtEstatusUsuario">Estatus</label>
+                        </div>
+
+                        <div id="txtBotones">
+                            <button type="button" class="btn btn-success" onClick="agregarUsu();">Insertar</button>   
+                            <button type="button" class="btn btn-secondary" onclick="limpiarUsu()"><i class="fas fa-times"></i> Cancelar</button>
+                        </div>
+                    </div>
+                    <div id="Imagenes" class="bg-white bg-opacity-25 m-4 p-2 cajas col-5">
+                             <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> IMAGEN </h1>
+                        <br>  
+                        <div class="form-floating mx-auto">
+
+                            <input type="file" id="idFotoUsuario" class="form-control" accept="image/*" onchange="cargarImgUSU();">
+
+                            <img id="fotoUsuario" src="" alt="Usuario" class="mt-2">
+                            <input type="hidden" id="txtFotoUsuario">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div> 
+</div>

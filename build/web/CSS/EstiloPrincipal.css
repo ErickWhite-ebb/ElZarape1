@@ -1,0 +1,57 @@
+body
+{
+    background-image: url("http://localhost:8080/ElZarape/MEDIA/comidaF.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header
+{
+     background-image: url("http://localhost:8080/ElZarape/MEDIA/Tittle.jpg");
+     color: white;
+     
+}
+.cajaCentro
+{
+    position: relative;
+    left: 30%;
+}
+.cajaDerecha
+{
+    position: relative;
+    left:40%;
+}
+.cajas
+{   
+   
+    background-color: white;
+   
+
+    border-radius: 15px;
+    border-color:rgba(75,217,95,255);
+          
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2),
+                0px 5px 10px rgba(0,0,0,0.2);
+    
+}
+footer
+{
+     background-image: url("http://localhost:8080/ElZarape/MEDIA/Tittle.jpg");
+     color: white;
+     
+}
+
+       .header-container {
+            
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 10px; 
+        }
+
+
+

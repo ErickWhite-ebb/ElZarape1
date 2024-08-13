@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h1 class="text-white"> SUCURSAL </h1>
+            <div id="catSucursal" class="m-4 p-3">
+
+                <div class="row m-3 mx-auto col-7">
+
+
+                    <div class="input-group">
+                        <input type="search" id="txtBusqSuc" class="form-control" placeholder="Buscar">
+                        <button type="button" class="btn btn-lg btn-warning" onClick="buscarSuc();"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" class="btn btn-lg btn-success" onClick="imprimirTablaSuc();"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    </div>
+                </div>
+
+                <table class="table table-striped cajas">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Nombre</td>
+                            <td>Direccion</td>
+                            <td>Horario</td>
+                            <td>Latitud</td>
+                            <td>Longitud</td>
+                            <td>Estatus</td>
+                            <td>Foto</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="tb-catSucursal">
+
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="formularioSucursal" class="bg-white bg-opacity-25 m-4 p-2 cajas col-6">
+                        <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> AGREGAR NUEVO </h1>
+                        <br>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" readonly class="form-control" id="txtIdSucursal">
+                            <label for="txtIdSucursal">Id</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtNombreSucursal">
+                            <label for="txtNombreSucursal">Nombre</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtDireccionSucursal">
+                            <label for="txtDireccionSucursal">Direccion</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtHorarioSucursal">
+                            <label for="txtHorarioSucursal">Horario</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtLatitudSucursal">
+                            <label for="txtLatitudSucursal">Latitud</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtLongitudSucursal">
+                            <label for="txtLongitudSucursal">Longitud</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" class="form-control" id="txtEstatusSucursal">
+                            <label for="txtEstatusSucursal">Estatus</label>
+                        </div>
+
+                        <div id="txtBotones">
+                            <button type="button" class="btn btn-success" onClick="agregarSuc();">Insertar</button>
+                            <button type="button" class="btn btn-secondary" onclick="limpiarSuc()"><i class="fas fa-times"></i> Cancelar</button>
+                        </div>
+
+
+                    </div>
+                    <div id="Imagenes" class="bg-white bg-opacity-25 m-4 p-2 cajas col-5">
+                            <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> IMAGEN </h1>
+                        <br>  
+                        <div class="form-floating mx-auto">
+
+                            <input type="file" id="idFotoSucursal" class="form-control" accept="image/*" onchange="cargarImgSUC();">
+
+                            <img id="fotoSucursal" src="" alt="Sucursal" class="mt-2">
+                            <input type="hidden" id="txtFotoSucursal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
