@@ -1,0 +1,99 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h1 class="text-white">ALIMENTOS</h1>
+            <div id="catSucursal" class="m-4 p-3">
+
+                <div class="row m-3 mx-auto col-7">
+                    <div class="input-group">
+                        <input type="search" id="txtBusqAlim" class="form-control" placeholder="Buscar">
+                        <button type="button" class="btn btn-lg btn-warning" onClick="buscarAlimento();"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" class="btn btn-lg btn-success" onClick="imprimirTablaAlimentos();"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <table class="table table-striped cajas">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Nombre</td>
+                                    <td>Descripcion</td>
+                                    <td>Precio</td>
+                                    <td>Categoria</td>
+                                    <td>Foto</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody id="tbCatAlimentos">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>   
+
+            <div class="container">
+                <div class="row">
+                    <form id="formAlimento" class="bg-white bg-opacity-25 m-4 p-2 cajas col-6">
+                        <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> AGREGAR NUEVO </h1>
+                        <br>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtIdAlim" class="form-control" disabled>
+                            <label for="txtIdAlim" >Id</label>
+
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtNomAlim" class="form-control">
+                            <label for="txtNomAlim">Nombre</label>
+
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtDescAlim" class="form-control">
+                            <label for="txtDescAlim">Descripcion</label>
+
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtPrecioAlim" class="form-control">
+                            <label for="txtPrecioAlim">Precio</label>
+
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtCatAlim" class="form-control">
+                            <label for="txtCatAlim">Categoria</label>
+
+                        </div>
+
+                        <div id="txtBotones">
+                            <button type="button" class="btn btn-success me-2" onclick="agregarAlimento()"><i class="fas fa-plus"></i> Insertar</button>
+                            <button type="button" class="btn btn-secondary" onclick="cancelarAlimento()"><i class="fas fa-times"></i> Cancelar</button>
+                        </div>
+
+                    </form>
+                    <div id="Imagenes" class="bg-white bg-opacity-25 m-4 p-2 cajas col-5">
+                        <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> IMAGEN </h1>
+                        <br>  
+                        <div class="form-floating mx-auto">
+
+                            <input type="file" id="ifFotoAlim" class="form-control" accept="image/*" onchange="cargarImgAlim();">
+
+                            <img id="fotoAlim" src="" alt="Alimento" class="mt-2">
+                            <input type="hidden" id="txtFotoAlim">
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

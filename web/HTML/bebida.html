@@ -1,0 +1,90 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h1 class="text-white">BEBIDAS</h1>
+            <div id="catSucursal" class="m-4 p-3">
+                <div class="row m-3 mx-auto col-7">
+                    <div class="input-group">
+                        <input type="search" id="txtBusqBebida" class="form-control" placeholder="Buscar">
+                        <button type="button" class="btn btn-lg btn-warning" onClick="buscarBebida();"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" class="btn btn-lg btn-success" onClick="imprimirTablaBebidas();"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <table class="table table-striped cajas">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Nombre</td>
+                                    <td>Descripcion</td>
+                                    <td>Precio</td>
+                                    <td>CategorIa</td>
+                                    <td>Foto</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody id="tbCatBebidas">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <form id="formBebida" class="bg-white bg-opacity-25 m-4 p-2 cajas col-6">
+                        <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> AGREGAR NUEVO </h1>
+                        <br>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtIdBebida" class="form-control" disabled>
+                            <label for="txtIdBebida">Id</label>
+                        </div>
+
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtNomBebida" class="form-control">
+                            <label for="txtNomBebida">Nombre</label>
+
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtDescBebida" class="form-control">
+                            <label for="txtDescBebida">Descripcion</label>
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtPrecioBebida" class="form-control">
+                            <label for="txtPrecioBebida" class="form-label">Precio</label>
+                        </div>
+                        <div class="cajas form-floating m-2 col-6 mx-auto">
+                            <input type="text" id="txtCatBebida" class="form-control">
+                            <label for="txtCatBebida" class="form-label">Categoria</label> 
+                        </div>
+
+                        <div id="txtBotones">
+                            <button type="button" class="btn btn-success" onClick="agregarBebida();">Insertar</button>   
+                            <button type="button" class="btn btn-secondary" onclick="cancelarBebida()"><i class="fas fa-times"></i> Cancelar</button>
+                        </div>
+
+                    </form>
+                    <div id="Imagenes" class="bg-white bg-opacity-25 m-4 p-2 cajas col-5">
+                        <br>
+                        <h1 class="small cajas p-2 col-4 mx-auto"> IMAGEN </h1>
+                        <br>  
+                        <div class="form-floating mx-auto">
+
+                            <input type="file" id="ifFotoBebida" class="form-control" accept="image/*" onchange="cargarImgBebida();">
+
+                            <img id="fotoBebida" src="" alt="Bebida" class="mt-2">
+                            <input type="hidden" id="txtFotoBebida">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

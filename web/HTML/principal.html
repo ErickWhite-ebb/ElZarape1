@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Erick Blanco Blanco">
+        <meta name="keywords" content="Pagina Principal El Zarape">
+        <meta name="description" content="Pagina web para el restaurante">
+        <link href="../STYLE/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../STYLE/sweetalert2-11.11.1/package/dist/sweetalert2.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../STYLE/fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="../CSS/EstiloPrincipal.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container-fluid" >
+               <header class="row p-2 cajas top">
+        <div class="header-container">
+            <h1>EL ZARAPE</h1>
+            <div class="buttons-container mx-5">
+                <button type="button" class="btn cajas" onClick="cargarMSucursal();">Sucursal</button>
+                <button type="button" class="btn cajas" onClick="cargarMUsuario();">Usuario</button>
+                <button type="button" class="btn cajas" onClick="cargarMAlimento();">Alimento</button>
+                <button type="button" class="btn cajas" onClick="cargarMBebida();">Bebida</button>
+                <button type="button" class="btn cajas" onClick="cargarMCombo();">Combo</button>
+                <button type="button" class="btn btn-danger text-black cajas" onClick="location.href='../index.html'">Salir</button>
+            </div>
+        </div>
+    </header>
+            <br>
+            <div class="row">
+
+                <section class="col-12 text-center" id="contenedor-principal"></section>
+            </div>    
+                    <footer class="cajas row col-12 p-3 text-center"> Universidad Tecnologica de Leon </footer>
+                
+            
+
+
+
+
+
+        </div>
+        <script src="../JS/carga.js" type="text/javascript"></script>
+        <script src="../JS/cargarSucursal.js" type="text/javascript"></script>
+        <script src="../JS/cargarUsuario.js" type="text/javascript"></script>
+        <script src="../JS/cargarBebida.js" type="text/javascript"></script>
+        <script src="../JS/cargarAlimento.js" type="text/javascript"></script>
+        <script src="../JS/cargarCombo.js" type="text/javascript"></script>
+
+        <script src="../STYLE/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="../STYLE/sweetalert2-11.11.1/package/dist/sweetalert2.all.min.js" type="text/javascript"></script>
+        <script src="../STYLE/fontawesome-free-6.5.2-web/js/all.min.js" type="text/javascript"></script>
+    </body>
+</html>
